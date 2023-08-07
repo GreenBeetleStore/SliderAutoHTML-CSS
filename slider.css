@@ -5,32 +5,23 @@
    background-color: #002F4E;
 }
 
-
-/* h2 {
-   text-align: center;
-   margin-top: 0px;
-   font-size: 2rem;
-   color: whitesmoke;
-} */
-
 .slider-frame {
-   width: 100%;
+   width: 1280px;
    height: auto;
    margin: 0 auto;
-
-   animation: slide 42s infinite alternate ease-in-out;
+   overflow: hidden;
+   animation: slide 56s infinite alternate ease-in-out;
 }
 
 .slider-frame ul {
    display: flex;
    padding: 0;
-   width: 400%;
+   width: 1400%;
    border-radius: 15px;
 }
 
 .slider-frame li {
    list-style: none;
-   border-radius: 15px;
    width: 100%;
 }
 
