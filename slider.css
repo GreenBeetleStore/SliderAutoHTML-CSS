@@ -1,76 +1,57 @@
-body {
-   background-color: lightgrey;
-   font-family: sans-serif;
+* {
+   margin: 0;
+   padding: 0;
+   font-family: lato;
+   background-image: url(images/bg.webp) ;
+   background-size: cover;
+}
+
+h2 {
+   text-align: center;
+   margin-top: 0px;
+   font-size: 2rem;
+   color: #002F4E;
 }
 
 .contenidor {
-   margin: auto;
-   background-color: black;
-   width: 800px;
-   padding: 30px;
+   width: 1280px;
+   height: 640px;
+   margin: 50px auto ;
+   overflow: hidden;
+
+   animation: slidea 20s infinite alternate ease-in-out;
 }
 
-ul, li {
-   margin: 0;
+.contenidor ul {
+   display: flex;
    padding: 0;
+   width: 600%;
+}
+
+.contenidor li {
    list-style: none;
-}
-
-ul.slider {
-   position: relative;
-   width: 800px;
-   height: 300px;
-}
-
-ul.slider li {
-   position: absolute;
-   left: 0;
-   top: 0;
-   opacity: 0;
-   width: inherit;
-   height: inherit;
-   background-color: white;
-   transition: opacity 0.5s;
-}
-
-ul.slider li img {
    width: 100%;
-   height: 300px;
+}
+
+.contenidor img {
+   width: 100%;
+   border-radius: 15px;
    object-fit: cover;
 }
 
-/* Selecciona el primer fill, o sigui slider1 */
+@keyframes slidea {
+   0% {margin-left: 0%;}
+   15% {margin-left: 0%;}
 
-ul.slider li:first-child {
-   opacity: 1;
-}
+   20% {margin-left: -100%;}
+   35% {margin-left: -100%;}
 
+   40% {margin-left: -200%;}
+   55% {margin-left: -200%;}
 
-ul.slider li:target {
-   opacity: 1;
-}
+   60% {margin-left: -300%;}
+   75% {margin-left: -300%;}
 
-
-/* Botons del slider */
-
-.selector {
-   text-align: center;
-   margin: 20px;
-}
-
-.selector li {
-   display: inline-block;
-   text-align: center;
-}
-
-.selector li a {
-   display: inline-block;
-   color: white;
-   text-decoration: none;
-   background-color: grey;
-   padding: 10px;
-   width: 20px;
-   height: 20px;
-   font-size: 20px;
-   border-radius: 100%;
+   80% {margin-left: -400%;}
+   95% {margin-left: -400%;}
 }
