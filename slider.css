@@ -2,56 +2,84 @@
    margin: 0;
    padding: 0;
    font-family: lato;
-   background-image: url(images/bg.webp) ;
-   background-size: cover;
+   background-color: #002F4E;
 }
 
-h2 {
+
+/* h2 {
    text-align: center;
    margin-top: 0px;
    font-size: 2rem;
-   color: #002F4E;
+   color: whitesmoke;
+} */
+
+.slider-frame {
+   width: 100%;
+   height: auto;
+   margin: 0 auto;
+
+   animation: slide 42s infinite alternate ease-in-out;
 }
 
-.contenidor {
-   width: 1280px;
-   height: 640px;
-   margin: 50px auto ;
-   overflow: hidden;
-
-   animation: slidea 20s infinite alternate ease-in-out;
-}
-
-.contenidor ul {
+.slider-frame ul {
    display: flex;
    padding: 0;
-   width: 600%;
+   width: 400%;
+   border-radius: 15px;
 }
 
-.contenidor li {
+.slider-frame li {
    list-style: none;
+   border-radius: 15px;
    width: 100%;
 }
 
-.contenidor img {
+.slider-frame img {
    width: 100%;
    border-radius: 15px;
    object-fit: cover;
 }
 
-@keyframes slidea {
+@keyframes slide {
    0% {margin-left: 0%;}
-   15% {margin-left: 0%;}
+   12.5% {margin-left: 0%;}
 
-   20% {margin-left: -100%;}
-   35% {margin-left: -100%;}
+   25% {margin-left: -100%;}
+   37.5% {margin-left: -100%;}
 
-   40% {margin-left: -200%;}
-   55% {margin-left: -200%;}
+   50% {margin-left: -200%;}
+   62.5% {margin-left: -200%;}
 
-   60% {margin-left: -300%;}
    75% {margin-left: -300%;}
+   87.5% {margin-left: -300%;}
 
-   80% {margin-left: -400%;}
-   95% {margin-left: -400%;}
+   100% {margin-left: -400%;}
+   112.5% {margin-left: -400%;}
+
+   125% {margin-left: -500%;}
+   137.5% {margin-left: -500%;}
+
+   150% {margin-left: -600%;}
+   162.5% {margin-left: -600%;}
+
+   175% {margin-left: -700%;}
+   187.5% {margin-left: -700%;}
+
+   200% {margin-left: -800%;}
+   212.5% {margin-left: -800%;}
+
+   225% {margin-left: -900%;}
+   237.5% {margin-left: -900%;}
+
+   250% {margin-left: -1000%;}
+   262.5% {margin-left: -1000%;}
+
+   275% {margin-left: -1100%;}
+   287.5% {margin-left: -1100%;}
+
+   300% {margin-left: -1200%;}
+   312.5% {margin-left: -1200%;}
+
+   325% {margin-left: -1300%;}
+   337.5% {margin-left: -1300%;}
 }
