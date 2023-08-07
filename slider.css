@@ -4,7 +4,7 @@
 }
 
 body {
-   width: 95%;
+   width: 100%;
    margin: 30px auto;
    background-color: #002F4E;
 }
@@ -12,7 +12,7 @@ body {
    width: 100%;
    height: auto;
    margin: 30px auto 0;
-   overflow: hidden;
+   /* overflow: hidden; */
    animation: slide 42s infinite alternate ease-in-out;
 }
 
@@ -26,6 +26,7 @@ body {
 .slider-frame li {
    list-style: none;
    width: 100%;
+   margin: 0 30px;
 }
 
 .slider-frame img {
