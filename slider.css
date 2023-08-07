@@ -1,16 +1,19 @@
 * {
    margin: 0;
    padding: 0;
-   font-family: lato;
-   background-color: #002F4E;
 }
 
+body {
+   width: 95%;
+   margin: 30px auto;
+   background-color: #002F4E;
+}
 .slider-frame {
-   width: 1280px;
+   width: 100%;
    height: auto;
-   margin: 0 auto;
+   margin: 30px auto 0;
    overflow: hidden;
-   animation: slide 56s infinite alternate ease-in-out;
+   animation: slide 42s infinite alternate ease-in-out;
 }
 
 .slider-frame ul {
@@ -27,6 +30,7 @@
 
 .slider-frame img {
    width: 100%;
+   height: 720px;
    border-radius: 15px;
    object-fit: cover;
 }
